@@ -18,7 +18,7 @@ class MyNostoCron extends Module
     {
         $this->name = 'mynostocron';
         $this->tab = 'advertising_marketing';
-        $this->version = '0.1.0';
+        $this->version = '1.0.0';
         $this->author = 'YourName';
         $this->need_instance = 1;
         $this->bootstrap = true;
