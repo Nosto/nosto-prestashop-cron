@@ -1,8 +1,7 @@
 <?php
 require_once(_PS_MODULE_DIR_ . '/nostotagging/nostotagging.php');
 
-use Nosto\Object\Product\ProductCollection as NostoSDKProductCollection;
-use Nosto\Object\Signup\Account as NostoSDKAccount;
+use Nosto\Model\Signup\Account as NostoSDKAccount;
 
 /**
  * Cron controller for updating products in batches to Nosto.

@@ -3,7 +3,7 @@
 This PrestaShop extension creates a "custom cron controller" for updating product data to Nosto. Please note that this extension should NOT be used as is. This is more of an example how to fetch products with the given limit and offset and send them to Nosto. You MUST implement the logic to only update products that have been changed. This can be achieved for example by checking when the product was last updated and only update the changed ones. This controller does not have any authentication either. The controller is only accessible from localhost.
 
 # Installing
-Clone this repository to your Prestashop's `modules/mynostocron` directory and install the module (mynostocron) from Prestashop store admin.  
+Clone this repository to your Prestashop's `modules/mynostocron` directory and install the module (mynostocron) from Prestashop store admin, or run `bin/console prestashop:module install mynostocron` from the command line.
 
 # Calling the controller
 After you have cloned the repository and installed the module you can access the controller from command line by calling `curl -v http:/your.store.com/modules/mynostocron/front/updateProducts.php?fc=module&module=mynostocron&controller=updateProducts&limit=50&offset=0`. 
